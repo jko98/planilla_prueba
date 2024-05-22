@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="validar.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>planilla</title>
@@ -11,45 +12,46 @@
         <h1>DATOS PERSONALES</h1>
         <div class="campos">
             <label for="">nombre:</label>
-            <input type="text">
+            <input type="text" id="nombre" name="name">
         </div>
         <div class="campos">
           <label for="">apellido:</label>
-          <input type="text" name="" id="">
+          <input type="text" name="apellido" id="apellido" >
         </div>
         <div class="campos">
         <label for="">fecha de nacimiento:</label>
-        <input type="date" name="" id="">
+        <input type="date" name="fecha" id="fecha">
         </div>
         <div class="campos">
          <label for="">genero:</label>
-          <select name="" id="">
+          <select name="genero" id="genero">
             <option value="1">Masculino</option>
             <option value="2">Femenino</option>
-            <option value="3">Femenino</option>
+            <option value="3" disabled>Otro</option>
           </select> 
         </div>
         <div class="campos">
         <label for="">edad:</label>
-        <input type="number" name="" id="">
+        <input type="text" name="edad" id="edad">
         </div>
         <div class="campos">
             <label for="">direccion:</label>
-            <input type="text" name="" id="">
+            <input type="text" name="direccion" id="direccion">
             <label for="">numero:</label>
-            <input type="number">
+            <input type="number" id="direccion_num" name="numero_dire">
            </div>
         <div class="campos">
           <label for="">codigo de area:</label>
-          <input type="number">
+          <input type="number" id="cod_area" name="cod_area">
           <label for="">Telefono:</label>
-          <input type="number" name="" id="">
+          <input type="number" name="telefono" id="celu">
         </div>
         <div class="campos">
           <label for="">Email:</label>
-          <input type="email" name="" id="">
+          <input type="email" name="correo" id="correo">
         </div>
-        <button type="submit">Registrar</button>
+        <p id="Mensaje"></p>
+        <button type="submit" id="enviar">Registrar</button>
     </form>
 </body>
 </html>
