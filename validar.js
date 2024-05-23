@@ -9,4 +9,6 @@ function validacion(){
     var codigoArea = document.getElementById("cod_area").value;
     var celular = document.getElementById("celu").value;
     var email = document.getElementById("correo").value;
+
+    alert(nombre + " " + apellido + " " + fecha + " " + genero + " " + edad + " " + direccion + " " + numerodire + " " + codigoArea + " " + celular + " " + email);
  }
